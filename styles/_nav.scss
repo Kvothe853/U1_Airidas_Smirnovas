@@ -1,0 +1,11 @@
+nav {
+  height: 80px;
+  background-color: #f8f8f8;
+  display: flex;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  @include align(row, flex-start, center);
+  img {
+    margin: 20px;
+    height: 60px;
+  }
+}

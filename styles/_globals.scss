@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  // --font-sizes
+
+  --text-size: 1.6rem;
+  --header1: 3.6rem;
+  --header2: 2.8rem;
+  --header3: 3.2rem;
+  --header4: 1.6rem;
+  --header5: 1.3rem;
+  --header6: 1rem;
+
+  // --colors
+
+  --text-color: #333;
+  --main-color: #6eb92b;
+}
+
+// Mixin's
+@mixin align($direction, $justify, $align) {
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Exo', sans-serif;
+  min-width: 320px;
+  background-color: #f8f8f8;
+  height: 100vh;
+}
+
+a,
+p,
+li,
+input,
+label,
+div {
+  font-size: var(--text-size);
+}
+
+h1 {
+  font-size: var(--header1);
+}
+h2 {
+  font-size: var(--header2);
+}
+h3 {
+  font-size: var(--header3);
+  font-weight: 400;
+  color: #2e3e50;
+}
+h4 {
+  font-size: var(--header4);
+}
+h5 {
+  font-size: var(--header5);
+}
+h6 {
+  font-size: var(--header6);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+// ---
